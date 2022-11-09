@@ -155,10 +155,9 @@
 	-fx-padding: 15px 0 0 0;
     -fx-background-size: 180% 400%;
 }
-
 .tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:focused {
-    -fx-background-color: #cee6ff;
-    -fx-text-fill: #ffffff;
+    -fx-background-color: rgba(49, 49, 58);
+    -fx-text-fill: #000000;
 	-fx-font-weight: bold;
 	-fx-font-size: 15px;
     -fx-background-color: -fx-focus-color, -fx-cell-focus-inner-border, -fx-selection-bar;
@@ -166,7 +165,7 @@
 
 .tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:hover {
 	-fx-font-size: 15px;
-    -fx-text-fill: #ffffff;
+    -fx-text-fill: #000000;
     -fx-background-color: rgba(0,153,204,0.5);
     -fx-background-size: 110%;
 }
@@ -180,14 +179,14 @@
 .tree-cell:filled:selected:focused,
 .tree-cell:filled:selected {
     -fx-background-color: #cee6ff;
-    -fx-text-fill: #ffffff;
+    -fx-text-fill: #000000;
 }
 
 .tree-cell{
 	-fx-cursor: hand;
     -fx-font-family: "Microsoft YaHei";
-    -fx-background: transparent;
-    -fx-text-fill: #303030;
+    -fx-background-color: rgba(49, 49, 58);
+    -fx-text-fill: #ffffff;
     -fx-padding: 8px;
     -fx-font-size: 14px;
     -fx-indent: 16;

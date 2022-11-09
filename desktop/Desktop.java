@@ -46,7 +46,7 @@ public class Desktop extends BorderPane {
         //设置放置物体间隔距离
         containPane.setStyle("-fx-padding: 8px;");
         //设置壁纸 /img/bj5++.jpg为壁纸相对路径
-        setStyle("-fx-background-color: transparent;-fx-background-image: url(/resourses/images/wallpapper1.png);-fx-background-size: 100%;");
+        setStyle("-fx-background-image: url(/resourses/images/wallpapper1.png);-fx-background-size: 100%;");
         Pane calenderPane=createCalenderWallPapper();
         setRight(calenderPane);
         //将containPane面板放在desktop面板的中心位置,可以把下面语句注释掉，看看运行效果，体会containPane面板的作用

@@ -24,7 +24,6 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.FileNotFoundException;
@@ -79,6 +78,7 @@ public class MainView {
     }
 
     private void initFrame(Stage stage) {
+        //borderpane
         this.flowPane = new FlowPane();
         this.flowPane.setPrefSize(300.0D, 300.0D);
         this.flowPane.setHgap(10.0D);
@@ -110,15 +110,14 @@ public class MainView {
         this.scene = new Scene(this.bp);
 
 
-        this.scene.setFill(Color.TRANSPARENT);
         MotionBlur motionBlur = new MotionBlur();
 
-        //Setting the radius to the effect
-        motionBlur.setRadius(10.5);
-
-        //Setting angle to the effect
-        motionBlur.setAngle(45);
-        //this.bp.setEffect(motionBlur);
+//        //Setting the radius to the effect
+//        motionBlur.setRadius(10.5);
+//
+//        //Setting angle to the effect
+//        motionBlur.setAngle(45);
+//        //this.bp.setEffect(motionBlur);
         this.scene.getStylesheets().add("resourses/css/PV.css");
         //stage.initStyle(StageStyle.UNIFIED);
         stage.setScene(this.scene);
