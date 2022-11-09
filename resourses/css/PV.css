@@ -1,0 +1,228 @@
+*{
+	-fx-font-family: "Microsoft YaHei";
+}
+
+#contextMenu{
+	-fx-text-fill: white ;
+	-fx-background-color:rgba(240,240,240,0.9);
+	-fx-padding:5px 10px 5px 10px;
+}
+
+#contextMenu2{
+	-fx-text-fill: white ;
+	-fx-background-color:rgba(240,240,240,0.9);
+	-fx-padding:5px 10px 5px 10px;
+}
+
+#fileContextMenu{
+	-fx-text-fill: white ;
+	-fx-background-color:rgba(240,240,240,0.9);
+	-fx-padding:5px 10px 5px 10px;
+}
+
+#flowPane{
+	
+}
+
+#AboutPane{
+	-fx-background-color: white ;
+	-fx-font-family: "Microsoft YaHei";
+	-fx-border-color: rgba(60,225,255,0.8) ;
+	-fx-border-width: 1px 0 0 0;
+	-fx-font-size: 18px;
+}
+
+#HelpPane{
+	-fx-background-color: white ;
+	-fx-font-family: "Microsoft YaHei";
+	-fx-border-color: rgba(60,225,255,0.8) ;
+	-fx-border-width: 1px 0 0 0;
+	-fx-font-size: 14px;
+}
+
+#blockTable{
+	-fx-background-color: #31313a;
+	-fx-border-color: #31313a;
+	-fx-border-width: 0.5px;
+}
+
+#Rename{
+	-fx-background-color: #ffffff;
+	-fx-border-color: black ;
+	-fx-border-width: 0.2 ;
+}
+
+#okbtn {
+	-fx-font-family: "Microsoft YaHei";
+	-fx-font-size: 12px;
+}
+
+#cancelbtn{
+	-fx-font-family: "Microsoft YaHei";
+	-fx-font-size: 12px;
+}
+
+#gridPane{
+	-fx-font-family: "Microsoft YaHei";
+	-fx-font-size: 12px;
+	-fx-border-color: rgba(20,20,20,0.8);
+	-fx-border-width: 0.5px 0 0 0;
+	-fx-background-color: rgb(255,255,255);
+}
+
+#flowPane{
+	-fx-padding: 10px;
+	-fx-background-color: #31313a;
+	-fx-border-color: grey ;
+	-fx-border-width: 0.5px 0 0 0; 
+}
+
+#icon{
+	-fx-padding: 5px;
+}
+
+#deskIcon{
+	-fx-font-family:'Microsoft Yahei';
+	-fx-text-fill: #f0f0f0;
+	-fx-padding: 10px;
+	-fx-font-weight: bolder;
+	-fx-font-size: 14px;
+	-fx-border-color: rgba(255,255,255,0);
+	-fx-border-width: 0.5px;
+}
+
+#deskIcon:hover{
+	-fx-background-color: rgba(60,225,255,0.25) ;
+	-fx-border-color: rgba(255,255,255,0.4);
+	-fx-border-width: 0.5px;
+	-fx-padding: 9.75px;
+}
+
+#deskIcon:focused{
+	-fx-background-color: rgba(51,204,255,0.45);
+	-fx-border-width: 15%;
+	-fx-border-color: #0000ff;
+}
+
+#innerIcon{
+	-fx-font-family: 'Microsoft Yahei';
+	-fx-text-fill: #233333;
+	-fx-padding: 5px 12px;
+	-fx-font-weight: bolder;
+	-fx-font-size: 12px;
+}
+
+#innerIcon:hover{
+	-fx-background-color: rgba(60,225,255,0.25) ;
+	-fx-border-color: rgba(255,255,255,0.4);
+	-fx-border-width: 0.5px;
+	-fx-padding: 4.5px 11.5px;
+}
+
+#shutDown{
+	-fx-font-family: 'Microsoft Yahei';
+	-fx-text-fill: #f0f0f0;
+	-fx-padding: 10px;
+    -fx-font-weight: bolder;
+    -fx-font-size: 14px; 
+    -fx-font-weight: bolder;
+    -fx-font-size: 14px;
+    -fx-background-color: rgba(60,225,255,0.25) ;
+}
+
+#shutDown:hover{
+	-fx-background-color: rgba(51,204,255,0.5);
+	-fx-border-width: 25%;
+	-fx-border-color: #0000ff;
+}
+
+#rec2{
+	/* -fx-background-color: #cee6ff;
+	-fx-font-size: 15px;*/
+}
+
+#icon:hover {
+	-fx-background-color: rgba(0,153,204,0.20) ;
+}
+
+#icon:focused {
+	-fx-background-color: rgba(51,204,255,0.45) ;
+	-fx-border-width: 15%;
+	-fx-border-color: #0000ff;
+}
+
+.tree-view{
+	-fx-padding: 15px 0 0 0;
+    -fx-background-size: 180% 400%;
+}
+
+.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:focused {
+    -fx-background-color: #cee6ff;
+    -fx-text-fill: #ffffff;
+	-fx-font-weight: bold;
+	-fx-font-size: 15px;
+    -fx-background-color: -fx-focus-color, -fx-cell-focus-inner-border, -fx-selection-bar;
+}
+
+.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:hover {
+	-fx-font-size: 15px;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: rgba(0,153,204,0.5);
+    -fx-background-size: 110%;
+}
+
+.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:focused:selected,
+.tree-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-cell:filled:focused:selected:hover {
+    -fx-background-color: -fx-focus-color, -fx-cell-focus-inner-border, -fx-selection-bar;
+}
+
+/* When the TreeView is _not_ focused, we show alternate selection colors */
+.tree-cell:filled:selected:focused,
+.tree-cell:filled:selected {
+    -fx-background-color: #cee6ff;
+    -fx-text-fill: #ffffff;
+}
+
+.tree-cell{
+	-fx-cursor: hand;
+    -fx-font-family: "Microsoft YaHei";
+    -fx-background: transparent;
+    -fx-text-fill: #303030;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+    -fx-indent: 16;
+    /* -fx-background-color:  #eeFFFF; */
+}
+
+.tree-cell .label {
+	-fx-font-size:30px;
+}
+
+.tree-cell > .tree-disclosure-node > .arrow,
+.tree-table-row-cell > .tree-disclosure-node > .arrow {
+     /*-fx-background-color:#0000ff;
+    -fx-padding:10px 52px 0.0 -40px;
+    -fx-scale-shape: false;
+    -fx-shape: "M930.907044 204.725708 534.897926 204.725708c-24.035377 0-43.81772-18.228153-46.282966-41.611723-0.054237-1.108241-0.128942-2.209318-0.222067-3.306302-0.01842-0.540306-0.039911-1.080611-0.039911-1.626034l0 0.157589-0.090055 0c-4.680794-47.034223-44.368281-83.754542-92.624262-83.754542L93.093979 74.584696c-51.4038 0-93.090909 41.668005-93.090909 93.086072l0 688.659489c0 51.408857 41.685063 93.085048 93.090909 93.085048l837.813065 0c51.402776 0 93.089886-41.676192 93.089886-93.085048L1023.99693 297.812803C1023.99693 246.394736 982.311867 204.725708 930.907044 204.725708zM977.45301 856.330256c0 25.704428-20.844578 46.542013-46.544943 46.542013L93.093979 902.872269c-25.708552 0-46.544943-20.837584-46.544943-46.542013L46.549036 344.354815l930.903974 0L977.45301 856.330256zM46.549036 297.812803 46.549036 167.671791c0-25.700335 20.836391-46.543036 46.544943-46.543036l302.544687 0c24.050728 0 43.83921 18.247596 46.286036 41.647539 0.053214 1.089821 0.125872 2.174526 0.215926 3.254114 0.019444 0.545422 0.041957 1.090844 0.041957 1.641383l0.106428 0c4.754475 46.958498 44.407169 83.596953 92.607889 83.596953l396.011165 0c25.699342 0 46.54392 20.842701 46.54392 46.543036L46.549036 297.81178 46.549036 297.812803z";
+    -fx-scale-x: 0.021;
+    -fx-scale-y: 0.021;*/
+	-fx-rotate: 0;
+    -fx-scale-shape: false;
+    -fx-shape: "M -2 -1 L 3 -1 L 3 -6 L 5 -6 L 5 -1 L 10 -1 L 10 1 L 5 1 L 5 6 L 3 6 L 3 1 L -2 1 z";/* 画个十字符号出来 */
+    -fx-background-color: black ;
+    /*-fx-padding:3.5px;
+    -fx-shape:"";
+    -fx-scale-x: 2.5;
+    -fx-scale-y: 2.5;
+    -fx-background-color:transparent;
+    -fx-background-image:url(../icon/f1.png);
+    -fx-background-size: 100%;
+    -fx-background-repeat: no-repeat;*/
+}
+
+.tree-cell:expanded > .tree-disclosure-node > .arrow{
+    -fx-shape: "M -3 -1 L 9 -1 L 9 1 L -3 1 z";
+    -fx-color: black;
+	/*-fx-background-image:url(../icon/f2.png);*/
+	/*-fx-shape: "M961.793 446.344 961.793 446.344 202.079 446.344c-28.215 0-52.07 18.43-60.285 43.93l0 0L75.51 694.483 75.51 129.847l0 0 316.499 0 0 0 0.07 0c0 69.927 56.645 126.57 126.575 126.57l0 0 316.499 0 0 126.572 63.28 0L898.433 256.417c0-34.927-28.35-63.287-63.28-63.287L518.579 193.13c-34.925 0-63.285-28.355-63.285-63.282l0 0c0-34.93-28.285-63.287-63.285-63.287l0 0L75.51 66.561c-34.927 0-63.285 28.357-63.285 63.287l0 759.571c0 34.93 28.357 63.28 63.285 63.28l759.573 0c28.215 0 52.07-18.425 60.285-43.93l0.07 0 129.5-399.137C1024.937 474.704 996.722 446.416 961.793 446.344zM838.368 889.418 75.51 889.418l123.285-379.787 762.853 0L838.368 889.418z";*/
+}
