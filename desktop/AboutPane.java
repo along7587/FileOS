@@ -1,8 +1,3 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
 package desktop;
 
 import javafx.scene.Scene;
@@ -13,7 +8,7 @@ import javafx.stage.Stage;
 
 public class AboutPane extends Pane {
     public AboutPane() {
-        String str = new String("\n\n\n\n\t\t\t\t18计算机科学与技术1班\n\n\n\t\t开发人员：程航驰   黄泽键  赖远进  苏俊仲  张凯智");
+        String str = new String("\n\n\n\n\t\t\t\t\t2020级软件工程1班\n\n\n\t\t\t\t开发人员：漆永康   张正法  徐铭志");
         Label textLabel = new Label(str);
         this.setId("AboutPane");
         this.getChildren().add(textLabel);
