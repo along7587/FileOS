@@ -24,6 +24,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.FileNotFoundException;
@@ -317,8 +318,10 @@ public class MainView {
         for(int i = 0; i < n; ++i) {
             if (((DiskBlock)bList.get(i)).getObject() instanceof Folder) {
                 this.icons[i] = new Label(((Folder)((DiskBlock)bList.get(i)).getObject()).getFolderName(), new ImageView(new Image("resourses/images/folder1.png", 60.0D, 60.0D, true, true)));
+                this.icons[i].setTextFill(Color.web("#FFFFFF"));
             } else {
                 this.icons[i] = new Label(((File)((DiskBlock)bList.get(i)).getObject()).getFileName(), new ImageView(new Image("resourses/images/file1.png", 60.0D, 60.0D, true, true)));
+                this.icons[i].setTextFill(Color.web("#FFFFFF"));
             }
 
             this.icons[i].setContentDisplay(ContentDisplay.TOP);
